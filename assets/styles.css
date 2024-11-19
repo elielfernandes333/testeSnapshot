@@ -1,0 +1,94 @@
+
+
+.cobalt, .bg-cobalt {
+    background-color: #303235; /* Azul-cobalto */
+    color: white; /* Cor do texto para contrastar com o fundo */
+}
+
+.grey-text {
+    color: grey;
+}
+
+
+.af {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+}
+
+.image {
+    width: 10%;
+    height: 10%;
+}
+
+.imagem-logo {
+    width: 100px; 
+    height: auto; 
+}
+
+
+.aboutpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px;
+}
+.aboutpage p {
+    font-size: 20px;
+}
+    .box1 {
+        display: flex;
+        justify-content: center; 
+    }
+
+    .box2 {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .box3 {
+        margin-right: 10px;
+    }
+
+    @media only screen and (max-width: 800px) {
+        .box1 {
+            display: flex;
+            justify-content: center; 
+        }
+    
+        .box2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .box3 {
+            padding-top: 2%;
+            margin-top: 10%;
+            width: 100px;
+        }
+    }
+
+    @keyframes dotBlink {
+        0%, 20%, 80%, 100% {
+          opacity: 0;
+        }
+        40%, 60% {
+          opacity: 1;
+        }
+      }
+      
+      .dot-animation {
+        display: inline-block;
+        animation: dotBlink 1.5s infinite;
+      }
